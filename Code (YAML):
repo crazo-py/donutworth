@@ -1,0 +1,73 @@
+prefix: "&8[&bDonutWorth&8]"
+
+messages:
+  worth-format: "&7Worth: &a$%value%"
+  reload-success: "&aConfiguration reloaded successfully!"
+  version: "&aRunning version: &e%version%"
+  no-permission: "&cYou don't have permission to use this command!"
+  only-player: "&cOnly players can use this command!"
+  unknown-command: "&cUnknown command!"
+  sell-no-permission: "&cYou don't have permission to sell!"
+  sell-success: "&aYou sold your items for &6$%value%!"
+  sell-unsellable-items: "&cSome items could not be sold and were returned to you."
+  sell-blacklist-items: "&cSome items are in the blacklist and were returned to you."
+
+admin-gui:
+  title: "&bDonutWorth Admin"
+  items-per-page: 45
+  next-page-name: "&aNext Page"
+  next-page-lore:
+   - "&7Click to go to next page"
+  previous-page-name: "&cPrevious Page"
+  previous-page-lore:
+   - "&7Click to go to previous page"
+  item-edit-title: "&bEdit Item: %item%"
+  item-edit-lore:
+    - "&7Current Price: &a$%price%"
+    - ""
+    - "&7Left Click: &a+$1"
+    - "&7Right Click: &c-$1"
+    - "&7Shift + Left Click: &a+$10"
+    - "&7Shift + Right Click: &c-$10"
+  blacklist-add-name: "&cAdd to Blacklist"
+  blacklist-add-lore:
+   - "&7Click to add this item to blacklist"
+  blacklist-remove-name: "&aRemove from Blacklist"
+  blacklist-remove-lore:
+   - "&7Click to remove this item from blacklist"
+  item-lore:
+    - "&7Price: &a$%price%"
+    - "&7Blacklisted: %blacklisted%"
+
+sell-gui:
+  title: "&bSell Items"
+  sell-paper-name: "&eTotal Value"
+  sell-paper-lore:
+   - "&7Put your items in the menu."
+    - "&7Close to sell and get money."
+  sell-menu-size: 54
+  sell-paper-slot: 53
+  sell-item-blacklist:
+ - AIR
+  - BEDROCK
+#This is the blacklist for the items that you don't want to sell.
+
+permissions:
+  reload: "donutworth.reload"
+  version: "donutworth.version"
+  sell: "donutworth.sell"
+  gui: "donutworth.gui"
+
+#This is the multiplier for the your server economy
+#If you want to change the multiplier, you can change it here.
+#This multiplier multiplies the items prices.
+multiplier: 1
+
+items:
+AIR: 0.0
+STONE: 1.0
+(continued... )
+
+enchantments:
+SHARPNESS: 300.0
+(continued... )
